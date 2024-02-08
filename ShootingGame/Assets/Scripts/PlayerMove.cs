@@ -13,6 +13,6 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.right * 5 * Time.deltaTime); //오른쪽 이동
     }
 }
