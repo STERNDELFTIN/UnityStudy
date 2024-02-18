@@ -15,10 +15,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - DestroyZone
+  - Player
+  - Bullet
+  - Enemy
   - 
   - 
   - 
