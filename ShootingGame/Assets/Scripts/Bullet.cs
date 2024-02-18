@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 5; // 총알 이동속도
+    public float speed = 3; // 총알 이동속도
     // Start is called before the first frame update
     void Start()
     {
