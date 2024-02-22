@@ -6,7 +6,8 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 5;
     Vector3 dir; // 방향을 전역 변수로 만들어 Start와 Update에서 사용
-    // Start is called before the first frame update
+    public GameObject explosionFactory; // 폭발 공장 주소
+
     void Start()
     {
         // Vector3 dir; // 삭제
@@ -25,8 +26,6 @@ public class Enemy : MonoBehaviour
         // 그렇지 않다면 아래 방향
         else dir = Vector3.down;
     }
-
-    // Update is called once per frame
     void Update()
     {
         // Vector3 dir = Vector3.down; // 삭제
@@ -34,9 +33,13 @@ public class Enemy : MonoBehaviour
         // 이동 P = P0 + vt
         transform.position += dir * speed * Time.deltaTime;
     }
-    // 충돌 및 충돌하면 파괴
+   
+    // 충돌하면 폭발 효과 발생 및 파괴
     private void OnCollisionEnter(Collision other)
     {
+        GameObject explosion = Instantiate(explosionFactory); // 폭발 효과 생성
+        explosion.transform.position = transform.position; // 폭발 효과 위치(발생)
+
         Destroy(other.gameObject); // 너 파괴
         Destroy(gameObject); // 나 파괴
     }
