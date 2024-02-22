@@ -31,6 +31,18 @@
 스크롤되는 배경 추가
 ### 순서
 1. 애셋 스토어에서 다운
+	-> Space Start Field Backgrounds 애셋 사용
 2. 프로젝트에 가져오기
 3. 스크롤되는 배경 추가
+
+## 2-6. 사운드 추가
+### 목표
+총알 사운드와 폭발 사운드를 추가
+### 순서
+1. 총알 사운드 추가
+	-> Free Laser Weapons 애셋 사용
+2. 폭발 사운드 추가
+	-> Retro Noisy Explosion Sound Pack Lite 애셋
+3. 배경 사운드 추가
+	-> Space Game BGM #1 애셋
 
